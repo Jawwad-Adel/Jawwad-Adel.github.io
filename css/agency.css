@@ -227,9 +227,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
-}
-
-.carousel-item {
+  header.carousel-item {
   height: 65vh;
   min-height: 350px;
   background: no-repeat center center scroll;
@@ -238,6 +236,9 @@ header.masthead .intro-text .intro-heading {
   -o-background-size: cover;
   background-size: cover;
 }
+}
+
+
 
 .service-heading {
   margin: 15px 0;
