@@ -229,6 +229,16 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
