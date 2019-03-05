@@ -73,7 +73,7 @@
         plane.receiveShadow = true;
         // ASCII file
         var loader = new THREE.STLLoader();
-        loader.load( './models/stl/ascii/slotted_disk.stl', function ( geometry ) {
+        loader.load( '/Users/yiftachcats/Desktop/Year 3/website/Futility/img/Assem_1.STL', function ( geometry ) {
           var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
           var mesh = new THREE.Mesh( geometry, material );
           mesh.position.set( 0, - 0.25, 0.6 );
@@ -85,7 +85,7 @@
         } );
         // Binary files
         var material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
-        loader.load( './models/stl/binary/pr2_head_pan.stl', function ( geometry ) {
+        loader.load( '/Users/yiftachcats/Desktop/Year 3/website/Futility/img/Assem_1.STL', function ( geometry ) {
           var mesh = new THREE.Mesh( geometry, material );
           mesh.position.set( 0, - 0.37, - 0.6 );
           mesh.rotation.set( - Math.PI / 2, 0, 0 );
@@ -94,7 +94,7 @@
           mesh.receiveShadow = true;
           scene.add( mesh );
         } );
-        loader.load( './models/stl/binary/pr2_head_tilt.stl', function ( geometry ) {
+        loader.load( '/Users/yiftachcats/Desktop/Year 3/website/Futility/img/Assem_1.STL', function ( geometry ) {
           var mesh = new THREE.Mesh( geometry, material );
           mesh.position.set( 0.136, - 0.37, - 0.6 );
           mesh.rotation.set( - Math.PI / 2, 0.3, 0 );
@@ -104,7 +104,7 @@
           scene.add( mesh );
         } );
         // Colored binary STL
-        loader.load( './models/stl/binary/colored.stl', function ( geometry ) {
+        loader.load( '/Users/yiftachcats/Desktop/Year 3/website/Futility/img/Assem_1.STL', function ( geometry ) {
           var meshMaterial = material;
           if ( geometry.hasColors ) {
             meshMaterial = new THREE.MeshPhongMaterial( { opacity: geometry.alpha, vertexColors: THREE.VertexColors } );
